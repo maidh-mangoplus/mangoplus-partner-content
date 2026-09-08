@@ -1,4 +1,4 @@
-const API_PUBLIC = 'https://script.google.com/macros/s/AKfycbwqKTYIwGcieaIzhGc2ohMEiC2A0rUm0ZZA2RErJCcdBLmKQOPknkbZYGuGNeBZ1C2Y/exec';
+const API_PUBLIC = 'https://script.google.com/macros/s/AKfycbyktydEQG7lUl4afO6IaHuYS1Sc_4ouZ69Rg1izyEHnszrPSRNLLMWaFE4gGEBzXxvmTA/exec';
 
 const RANK_CLASS = { 'S+': 'rank-splus', 'S': 'rank-s', 'A+': 'rank-aplus', 'A': 'rank-a' };
 const STATUS_CLASS = { 'Mới ra mắt': 'status-new', 'Đang phát sóng': 'status-live' };
