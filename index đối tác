@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MangoPlus – Cập nhật nội dung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-header">
+    <img src="mplus-logo-1.png" alt="MangoPlus" class="brand-logo" onerror="this.style.display='none'">
+    <div class="sub">Cập nhật nội dung</div>
+  </div>
+
+  <div class="sticky-nav">
+    <div class="nav-row">
+      <div class="view-tabs">
+        <button data-view="tongquan" class="active">Tổng quan</button>
+        <button data-view="chitiet">Chi tiết</button>
+        <button data-view="scheme">Scheme</button>
+      </div>
+      <div class="history-nav">
+        <button class="nav-btn" id="nav-back" aria-label="Quay lại" title="Quay lại" disabled>‹</button>
+        <button class="nav-btn" id="nav-next" aria-label="Tiến tới" title="Tiến tới" disabled>›</button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <button class="chip active" data-group="all">Tất cả</button>
+      <button class="chip" data-group="Show">Show</button>
+      <button class="chip" data-group="Phim">Phim</button>
+      <button class="chip" data-group="Short">Short</button>
+      <button class="chip" data-toggle="excl">Độc quyền</button>
+      <button class="chip" data-toggle="new">Mới ra mắt</button>
+      <input class="search-input" id="searchInput" placeholder="Tìm theo tên chương trình…">
+    </div>
+  </div>
+
+  <div id="view-tongquan">
+    <div class="trending-header"><span class="trending-heading">Top thịnh hành</span></div>
+    <div class="trending-wrap">
+      <button class="trend-arrow trend-arrow-left" id="trend-prev">‹</button>
+      <div class="trending-scroll" id="trendingScroll"></div>
+      <button class="trend-arrow trend-arrow-right" id="trend-next">›</button>
+    </div>
+    <div id="overview-groups"><div class="state-msg">Đang tải nội dung…</div></div>
+  </div>
+
+  <div id="view-chitiet" style="display:none"><div id="grid-chitiet"></div></div>
+
+  <div id="view-scheme" style="display:none">
+    <div class="scheme-box" id="schemeContent"></div>
+  </div>
+
+</div>
+
+<div class="modal-overlay" id="trailer-modal">
+  <div class="modal-panel">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div id="trailer-embed-area"></div>
+    <a href="#" class="trailer-fallback" id="trailer-fallback-link" target="_blank" rel="noopener">Mở video gốc ↗</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
